@@ -1,4 +1,4 @@
-# search-how-many-people
+# people-counter
 A Firefox Add-on to show how many people in a place for a google search.
 
 ## Usage
