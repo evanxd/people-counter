@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "name": "People Counter",
+  "description": "People Counter.",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Evan Tseng",
+    "url": "https://github.com/evanxd"
+  },
+  "type": "privileged",
+  "permissions": {
+    "tcp-socket": {}
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en"
+}

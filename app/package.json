@@ -1,0 +1,17 @@
+{
+  "name": "people-counter",
+  "version": "0.0.1",
+  "homepage": "https://github.com/evanxd/search-how-many-people",
+  "authors": [
+    "Evan Xd <evan@tseng.io>"
+  ],
+  "description": "The people counter for the add-on.",
+  "keywords": [
+    "arduino",
+    "fxos"
+  ],
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "fxos-web-server": "0.0.8"
+  }
+}
