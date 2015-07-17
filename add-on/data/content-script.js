@@ -17,10 +17,12 @@ function showPeopleCounter() {
   }
   timerId = setInterval(function() {
     var element = document.querySelector('._OKe ol');
+    var before = document.querySelectorAll('._OKe ol li')[5];
     if (element) {
       var counter = document.createElement('li');
+      counter.classList.add('mod');
       counter.innerHTML = message;
-      element.appendChild(counter);
+      element.insertBefore(counter, before);
       clearInterval(timerId);
       timerId = null;
     }
