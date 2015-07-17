@@ -1,9 +1,14 @@
-var HOW_MANY_PEOPLE_MESSAGE = '<h2>人數：57/100</h2>';
+var message;
+var peopleNumber;
 var timerId;
 
-showPeopleCounter();
-window.addEventListener('hashchange', function() {
+self.port.on('peopleNumber', function(data) {
+  peopleNumber = data.peopleNumber;
+  message = `<h2>人數：${peopleNumber}/100</h2>`;
   showPeopleCounter();
+  window.addEventListener('hashchange', function() {
+    showPeopleCounter();
+  });
 });
 
 function showPeopleCounter() {
@@ -14,7 +19,7 @@ function showPeopleCounter() {
     var element = document.querySelector('._OKe ol');
     if (element) {
       var counter = document.createElement('li');
-      counter.innerHTML = HOW_MANY_PEOPLE_MESSAGE;
+      counter.innerHTML = message;
       element.appendChild(counter);
       clearInterval(timerId);
       timerId = null;
