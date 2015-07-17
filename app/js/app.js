@@ -50,11 +50,15 @@
     start.addEventListener('click', function() {
       httpServer.start();
       status.textContent = 'Running';
+      add.disabled = false;
+      subtract.disabled = false;
     });
 
     stop.addEventListener('click', function() {
       httpServer.stop();
       status.textContent = 'Stopped';
+      add.disabled = true;
+      subtract.disabled = true;
     });
   });
 
