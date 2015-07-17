@@ -10,9 +10,15 @@
         // TODO: Get the people number from the BLE people counter.
         break;
     }
-    var jsonp = `${request.params.callback}({ "${request.params.data}": ${peopleNumberData} });`;
-    response.headers['Content-Type'] = 'text/javascript';
-    response.send(jsonp);
+    var json;
+    if (request.params.callback) {
+      json = `${request.params.callback}({ "${request.params.data}": ${peopleNumberData} });`;
+      response.headers['Content-Type'] = 'text/javascript';
+    } else {
+      json = `{ "${request.params.data}": ${peopleNumberData} }`;
+      response.headers['Content-Type'] = 'application/json';
+    }
+    response.send(json);
   });
 
   window.addEventListener('load', function() {
