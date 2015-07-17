@@ -38,7 +38,7 @@
     port.textContent = httpServer.port;
 
     add.addEventListener('click', function() {
-      peopleNumberData++;
+      peopleNumberData < 100 && peopleNumberData++;
       peopleNumber.innerHTML = peopleNumberData;
     });
 
