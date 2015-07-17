@@ -27,6 +27,7 @@
     var ip = document.querySelector('#ip');
     var port = document.querySelector('#port');
     var add = document.querySelector('#add');
+    var subtract = document.querySelector('#subtract');
     var start = document.querySelector('#start');
     var stop = document.querySelector('#stop');
 
@@ -38,6 +39,11 @@
 
     add.addEventListener('click', function() {
       peopleNumberData++;
+      peopleNumber.innerHTML = peopleNumberData;
+    });
+
+    subtract.addEventListener('click', function() {
+      peopleNumberData && peopleNumberData--;
       peopleNumber.innerHTML = peopleNumberData;
     });
 
