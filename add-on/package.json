@@ -3,7 +3,7 @@
   "title": "people-counter",
   "id": "jid1-OWDAsISamuUmkw",
   "description": "Show how many people in a place for a google search.",
-  "author": "",
+  "author": "Evan Tseng <evan@tseng.io>",
   "preferences": [{
       "name": "serverAddress",
       "title": "Server Address",
