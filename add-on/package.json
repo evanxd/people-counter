@@ -4,6 +4,13 @@
   "id": "jid1-OWDAsISamuUmkw",
   "description": "Show how many people in a place for a google search.",
   "author": "",
+  "preferences": [{
+      "name": "serverAddress",
+      "title": "Server Address",
+      "description": "e.g. http://10.247.34.241:8080",
+      "type": "string",
+      "value": "http://10.247.34.241:8080"
+  }],
   "license": "MPL 2.0",
   "version": "0.1"
 }
