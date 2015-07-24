@@ -5,6 +5,10 @@
   httpServer.addEventListener('request', function(evt) {
     var request  = evt.request;
     var response = evt.response;
+    if (Object.keys(request.params).length === 0) {
+      response.send('<h1>It works!</h1>');
+      return;
+    }
     switch(request.params.data) {
       case 'peopleNumber':
         // TODO: Get the people number from the BLE people counter.
