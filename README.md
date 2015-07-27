@@ -1,9 +1,10 @@
 # people-counter
-A Firefox Add-on to show how many people in a place for a google search.
+A Firefox Add-on to show how many people in a place in a Yahoo! search.
 
 ## Usage
-1. Install [Add-on SDK](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation).
-2. Clone the repository.
-3. Go to `search-how-many-people/add-on` directory.
-4. Run `cfx run`.
-5. Do google search.
+1. Install latest [people-counter add-on](https://github.com/evanxd/people-counter/tree/master/add-on/build).
+2. Install [people-counter app](https://github.com/evanxd/people-counter/tree/master/app) in FxOS device.
+3. Do Yahoo! search.
+
+### Screenshot
+![Yahoo! Search](images/yahoo-search.png)
