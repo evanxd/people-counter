@@ -6,7 +6,7 @@ var now = Date.now();
 var url = `${prefs.serverAddress}/?data=peopleNumber&${now}`;
 
 pageMod.PageMod({
-  include: '*.google.com.tw',
+  include: '*.yahoo.com',
   contentScriptFile: './content-script.js',
   onAttach: function(worker) {
     Request({
