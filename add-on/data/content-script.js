@@ -4,7 +4,7 @@ var timerId;
 
 self.port.on('peopleNumber', function(data) {
   peopleNumber = data.peopleNumber;
-  message = `<h2>人數：${peopleNumber}/100</h2>`;
+  message = `<h2>Traffic: ${peopleNumber}/100</h2>`;
   showPeopleCounter();
   window.addEventListener('hashchange', function() {
     showPeopleCounter();
